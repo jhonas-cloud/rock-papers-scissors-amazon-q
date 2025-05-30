@@ -1,0 +1,155 @@
+:root {
+  font-family: 'Poppins', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: #333;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: #333;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.game-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.choices {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.choice {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 4px solid transparent;
+}
+
+.choice:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.choice.rock {
+  border-color: #e74c3c;
+}
+
+.choice.paper {
+  border-color: #3498db;
+}
+
+.choice.scissors {
+  border-color: #2ecc71;
+}
+
+.choice img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.result {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  min-height: 2rem;
+}
+
+.score {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.score-box {
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reset-btn {
+  margin-top: 2rem;
+  padding: 0.8em 2em;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  background-color: #6c5ce7;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #5649c0;
+  transform: translateY(-2px);
+}
+
+.choices-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.player-choice, .computer-choice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.vs {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 1rem;
+  align-self: center;
+  color: #6c5ce7;
+}
+
+.battle {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
